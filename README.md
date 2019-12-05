@@ -7,8 +7,9 @@ Automatización de escritorio con la Calculadora de Windows utilizando Screenpla
 
 ## Requisitos:
 - Descargar *(preferiblemente una versión estable)* WinAppDriver : [WinAppDriver Releases](https://github.com/Microsoft/WinAppDriver/releases "WinAppDriver Releases") Descargar archivo **WindowsApplicationDriver.msi** e instalar, se recomienda dejar la ruta por defecto.
-- Activar modo Desarrollador en Windows -> Configuración -> Buscar "Configuración del Desarrollador" ->** Activar el Check de Modo Programador"**
+- Activar modo Desarrollador en Windows -> Configuración -> Buscar "Configuración del Desarrollador" ->**Activar el Check de Modo Programador**
 - Descargar el instalador del SDK Windows 10: [Descargar SDK Windows 10](https://developer.microsoft.com/es-es/windows/downloads/windows-10-sdk "Descargar SDK Windows 10")  No descargar el ISO. Una vez descargado el instalador realizar la instalación, se recomienda dejar la ruta de instalación por defecto.
+
 **Nota:** Esta herramienta nos brinda el Inspector para poder mapear los objetos de la aplicación de escritorio que queremos trabajar.
 
 ### Despues de Instalar
@@ -17,18 +18,18 @@ Automatización de escritorio con la Calculadora de Windows utilizando Screenpla
 Deberia de abrir una consola con el siguiente mensaje:
 [![winappdriver](https://i.ibb.co/jygmBZ5/Captura.png "winappdriver")](https://i.ibb.co/jygmBZ5/Captura.png "winappdriver")
 
-- Una vez se haya ejecutado se puede ejecutar la automatización
-
-### Mapeo de Objetos
-- Si se quiere mapear alguna aplicación en especifico dirigirse a la ruta `C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64` (ruta de instalación del SDK de windows 10) y ejecutar en **inspect.exe**.
+#### Una vez se haya ejecutado se puede ejecutar la automatización
 
 ### Comando ejecución
 - `gradle clean test aggregate`
+
+### Mapeo de Objetos
+- Si se quiere mapear alguna aplicación en especifico dirigirse a la ruta `C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64` (ruta de instalación del SDK de windows 10) y ejecutar en **inspect.exe**.
 
 ### Resultado de la ejecución
 
 [![Reporte](https://i.ibb.co/RNGLvf4/Captura1.png "Reporte")](https://i.ibb.co/RNGLvf4/Captura1.png "Reporte")
 
 
-Se crearán escenarios mas complejos que tengan un flujo mayor y con aplicaciones distintas.
+#### Se crearán escenarios mas complejos que tengan un flujo mayor y con aplicaciones distintas.
 
