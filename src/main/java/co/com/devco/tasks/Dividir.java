@@ -7,14 +7,15 @@ import net.serenitybdd.screenplay.actions.Click;
 import static co.com.devco.userinterface.CalculadoraPage.*;
 import static co.com.devco.userinterface.CalculadoraPage.SIGNO_IGUAL;
 
-public class Restar implements Task {
+public class Dividir implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(NUMERO_CUATRO),
-                Click.on(SIGNO_MENOS),
-                Click.on(NUMERO_DOS),
+                Click.on(NUMERO_UNO),
+                Click.on(NUMERO_CERO),
+                Click.on(SIGNO_DIVISION),
+                Click.on(NUMERO_CINCO),
                 Click.on(SIGNO_IGUAL)
         );
     }

@@ -10,7 +10,15 @@ public class Operaciones {
         return instrumented(Sumar.class);
     }
 
-    public static Performable restarLosNumeros(){
+    public static Performable restarLosNumeros() {
         return instrumented(Restar.class);
+    }
+
+    public static Performable multiplicarLosNumeros() {
+        return instrumented(Multiplicar.class);
+    }
+
+    public static Performable dividirLosNumeros() {
+        return instrumented(Dividir.class);
     }
 }
