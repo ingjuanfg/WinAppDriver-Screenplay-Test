@@ -9,11 +9,13 @@ import static co.com.devco.userinterface.CalculadoraPage.*;
 public class Sumar implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
+        System.out.println("Llegue");
         actor.attemptsTo(
-                Click.on(NUMERO_SEIS),
-                Click.on(SIGNO_MAS),
-                Click.on(NUMERO_OCHO),
-                Click.on(SIGNO_IGUAL)
+                Click.on(ARCHIVO),
+                Click.on(NUEVO)
+            //    Click.on(NUMERO_OCHO),
+              //  Click.on(SIGNO_IGUAL)
         );
+        System.out.println("Sali");
     }
 }

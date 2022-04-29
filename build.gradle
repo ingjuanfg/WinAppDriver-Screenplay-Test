@@ -37,7 +37,7 @@ dependencies {
     implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityCucumberVersion"
-    
+    implementation "com.github.2gis.winium:winium-webdriver:0.1.0-1"
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'io.appium:java-client:7.3.0'
     

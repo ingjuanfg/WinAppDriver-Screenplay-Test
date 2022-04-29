@@ -20,4 +20,6 @@ public class CalculadoraPage{
     public static final Target SIGNO_DIVISION = Target.the("Menos").located(By.name("Dividido por"));
     public static final Target SIGNO_IGUAL = Target.the("Es igual a").located(By.name("Es igual a"));
     public static final Target RESULTADO = Target.the("Es igual a").locatedBy("//*[contains(@Name, 'Se muestra')]");
+    public static final Target ARCHIVO = Target.the("Es igual a").located(By.name("Archivo"));
+    public static final Target NUEVO = Target.the("Es igual a").located(By.id("1"));
 }

@@ -2,6 +2,7 @@ package co.com.devco.stepdefinitions;
 
 import co.com.devco.exceptions.ResultadoNoEsperadoException;
 import co.com.devco.questions.Resultado;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
@@ -10,9 +11,12 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+import java.net.MalformedURLException;
+
 import static co.com.devco.exceptions.ResultadoNoEsperadoException.MENSAJE_RESULTADO_OPERACION_NO_ESPERADO;
 import static co.com.devco.tasks.Operaciones.*;
-import static co.com.devco.utils.drivers.DriverManager.abrirCalculadoraWindows;
+import static co.com.devco.utils.drivers.OpenPortableApps.abrirProgramaContable;
+
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -25,9 +29,9 @@ public class SumarStepDefinition {
     }
 
     @Dado("^que (.*) se encuentra en la calculadora de Windows$")
-    public void prepararEscenario(String nombreActor) {
+    public void prepararEscenario(String nombreActor) throws MalformedURLException {
         theActorCalled(nombreActor).can(
-                BrowseTheWeb.with(abrirCalculadoraWindows())
+                BrowseTheWeb.with(abrirProgramaContable())
         );
     }
 
@@ -41,21 +45,21 @@ public class SumarStepDefinition {
     @Cuando("^Juan realiza la resta de 4 y 2$")
     public void juanRealizaLaRestaDe() {
         theActorInTheSpotlight().attemptsTo(
-                restarLosNumeros()
+              //  restarLosNumeros()
         );
     }
 
     @Cuando("^Juan realiza la multiplicacion de 3 y 7$")
     public void juanRealizaLaMultiplicacionDe() {
         theActorInTheSpotlight().attemptsTo(
-                multiplicarLosNumeros()
+         //       multiplicarLosNumeros()
         );
     }
 
     @Cuando("^Juan realiza la division de 10 y 5$")
     public void juanRealizaLaDivisionDe() {
         theActorInTheSpotlight().attemptsTo(
-                dividirLosNumeros()
+         //       dividirLosNumeros()
         );
     }
 
